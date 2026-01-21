@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Quiet Place</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- AUDIO (DO NOT TOUCH NAME) -->
+<audio id="bgMusic" preload="auto" loop playsinline>
+  <source src="Until_I_Found_You.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PASSWORD -->
+<section id="lock" class="page active">
+  <img class="kitty" src="https://media.tenor.com/2roX3uxz_68AAAAC/hello-kitty.gif">
+  <p>This space is private.</p>
+  <input id="pass" type="password" placeholder="enter the word">
+  <p class="tiny">wrong word = no cuddles 😤</p>
+  <button onclick="unlock()">enter</button>
+</section>
+
+<!-- MOOD -->
+<section id="mood" class="page">
+  <p>How are you feeling right now?</p>
+  <button onclick="setMood('soft')">soft</button>
+  <button onclick="setMood('heavy')">heavy</button>
+  <button onclick="setMood('quiet')">quiet</button>
+  <button onclick="setMood('hopeful')">hopeful</button>
+</section>
+
+<!-- LETTER -->
+<section id="letter" class="page">
+  <div class="letter-box">
+    <p>
+      <strong>Happy Valentine’s Day ❤️</strong><br><br>
+
+      I don’t think I ever tell you enough how deeply you matter to me.
+      You’re not just someone I love—you’re someone I choose, again and again.
+      In every version of my life, in every high and low, it’s you I want beside me.<br><br>
+
+      I promise you this with my whole heart: whatever comes our way, we will face it together.
+      When life feels heavy, I’ll carry the weight with you.
+      When you’re tired, I’ll be your rest.
+      When you doubt yourself, I’ll remind you of who you are and how strong you truly are.
+      I won’t walk away when things get hard—I’ll hold on tighter.<br><br>
+
+      You’re my comfort, my courage, my home.
+      Loving you has taught me patience, strength, and hope.
+      Even on the days when words fail or everything feels uncertain,
+      one thing will always stay clear—I’m on your side. Always.<br><br>
+
+      This isn’t just a Valentine’s promise.<br>
+      It’s a forever one.<br><br>
+
+      Yours,<br><strong>Pakhi</strong>
+    </p>
+  </div>
+
+  <img class="gift" src="https://media.tenor.com/zH8Y9kN6G7kAAAAC/flowers-bouquet.gif">
+  <img class="gift" src="https://media.tenor.com/0yG8tZ0nqz0AAAAC/cute-couple.gif">
+
+  <button onclick="goDiary()">continue</button>
+</section>
+
+<!-- DIARY -->
+<section id="diary" class="page">
+  <h2>Little Diaries</h2>
+
+  <div class="diary-card">
+    <img src="https://i.supaimg.com/4d9d2988-1c11-4deb-86d9-8adbf5c7bd59.jpg">
+    <p>Some moments feel safe without explanation.</p>
+  </div>
+
+  <div class="diary-card">
+    <img src="https://i.supaimg.com/ae076a2d-c05d-457d-a28d-ef1fbcf4c4ba.jpg">
+    <p>You stayed closer than I expected.</p>
+  </div>
+
+  <div class="diary-card hidden">
+    <img src="https://i.supaimg.com/b9f4c02a-eacb-4153-b776-a17d85c5d90b.jpg">
+    <p>This felt gentle in a quiet way.</p>
+  </div>
+
+  <button onclick="revealNext()">stay a little longer</button>
+</section>
+
+<!-- GAME -->
+<section id="game" class="page">
+  <p>Slow your touch.</p>
+  <div id="gameZone">
+    <div id="circle"></div>
+  </div>
+  <p id="gameText">tap gently 💗</p>
+</section>
+
+<!-- END -->
+<section id="ending" class="page ending">
+  <p>Thank you for staying.</p>
+  <p>Happy Valentine’s Day ❤️</p>
+</section>
+
+<!-- MUSIC TOGGLE -->
+<div id="musicToggle" onclick="toggleMusic()">🎵</div>
+
+<script src="script.js"></script>
+</body>
+</html>
