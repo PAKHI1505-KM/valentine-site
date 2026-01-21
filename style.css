@@ -1,0 +1,33 @@
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Georgia,serif;text-align:center;
+  background:linear-gradient(#fff6f9,#f6c1d1);color:#5a3d45
+}
+.page{display:none;min-height:100vh;padding:40px 20px}
+.page.active{display:block}
+button,input{
+  padding:12px 24px;border-radius:25px;border:none;margin:10px;font-size:15px
+}
+button{background:#e8a1b2;color:#fff}
+.letter-box{
+  background:#fff;padding:25px;border-radius:25px;max-width:520px;
+  margin:20px auto;line-height:1.8
+}
+.diary-card{
+  background:#fff;border-radius:22px;margin:25px auto;width:90%;
+  max-width:360px;box-shadow:0 10px 30px rgba(0,0,0,.12);overflow:hidden
+}
+.diary-card img{width:100%}
+.hidden{display:none}
+.kitty{width:120px}
+.gift{width:140px;margin:10px auto;display:block}
+#gameZone{
+  margin:40px auto;width:200px;height:200px;border:2px dashed #e8a1b2;
+  border-radius:50%;display:flex;align-items:center;justify-content:center
+}
+#circle{
+  width:60px;height:60px;background:#e8a1b2;border-radius:50%;
+  transition:transform .3s ease
+}
+.ending{background:linear-gradient(#f6c1d1,#e3a4b6)}
+#musicToggle{position:fixed;bottom:20px;right:20px;font-size:22px}
